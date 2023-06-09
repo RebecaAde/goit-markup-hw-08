@@ -8,10 +8,10 @@
   color: $text-color;
   margin: 0;
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(/images/header-background-m.jpg) no-repeat;
+    url(../images/header-background-m.jpg) no-repeat;
   background-image: image-set(
-    url(/images/header-background-m.jpg) x1,
-    url(/images/header-background-m@2x.jpg) x2
+    url(../images/header-background-m.jpg) x1,
+    url(../images/header-background-m@2x.jpg) x2
   );
 }
 .hero-section__title {
@@ -64,10 +64,10 @@
     margin: 0;
     padding-top: 10px;
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(/images/header-background-t.jpg) no-repeat;
+      url(../images/header-background-t.jpg) no-repeat;
     background-image: image-set(
-      url(/images/header-background-t.jpg) x1,
-      url(/images/header-background-t@2x.jpg) x2
+      url(../images/header-background-t.jpg) x1,
+      url(../images/header-background-t@2x.jpg) x2
     );
   }
   .hero-section__title {
@@ -117,10 +117,10 @@
     height: 600px;
     padding-top: 10px;
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(/images/header-background-d.jpg);
+      url(../images/header-background-d.jpg);
     background-image: image-set(
-      url(/images/header-background-d.jpg) x1,
-      url(/images/header-background-d@2x.jpg) x2
+      url(../images/header-background-d.jpg) x1,
+      url(../images/header-background-d@2x.jpg) x2
     );
   }
   .hero-section__title {
