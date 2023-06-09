@@ -210,6 +210,9 @@
   .navigation__links li {
     margin-right: 30px;
   }
+  .nav-links {
+    display: none;
+  }
 }
 
 @media screen and (min-width: $desktop-breakpoint) {
@@ -249,6 +252,9 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
+  }
+  .nav-links {
+    display: none;
   }
 
   .navigation {
