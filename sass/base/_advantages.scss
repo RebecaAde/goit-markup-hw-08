@@ -1,6 +1,7 @@
 .advantages {
   display: flex;
   flex-direction: column;
+  justify-content: flex-start;
 }
 
 .work__section {
@@ -169,6 +170,7 @@ h2 {
   .advantages {
     display: flex;
     flex-direction: row;
+    justify-content: center;
   }
 
   .cards__card {
