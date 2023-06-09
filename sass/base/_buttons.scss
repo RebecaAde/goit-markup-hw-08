@@ -1,0 +1,118 @@
+/*Hero section buttons*/
+
+/*Modal buttons*/
+
+.modal__content--close-btn {
+  background: $text-color;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  color: black;
+  position: absolute;
+  outline: none;
+  right: 8px;
+  top: 8px;
+  transform: scale(1.1);
+  padding-bottom: 5px;
+  position: absolute;
+  cursor: pointer;
+  &:hover {
+    color: $link-color;
+    background: $text-color;
+    border: 2px solid #e5e5e5;
+    border-radius: 50%;
+  }
+}
+/*Form buttons*/
+
+.form-footer-btn-portofolio {
+  font-family: "Roboto";
+  font-style: normal;
+  font-size: 16px;
+  line-height: 30px;
+  padding-right: 30px;
+  width: 200px;
+  background: $link-color;
+  color: $text-color;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-left: 12px;
+  cursor: pointer;
+  padding-inline-start: 0;
+}
+
+.form__btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+  &--form-button {
+    width: 200px;
+    height: 50px;
+    border-radius: 4px;
+    border: $link-color;
+    background: $link-color;
+    font-family: "Roboto";
+    font-style: normal;
+    box-shadow: 0px 1px 3px rgb(247, 244, 244), 0px 1px 1px rgb(238, 232, 232),
+      0px 2px 1px rgba(253, 251, 251, 0.999);
+    color: $text-color;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    cursor: pointer;
+    &:hover {
+      background: #0a8bf5;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+    &:active {
+      background: #0a8bf5;
+      transition-duration: 250ms;
+      transition-timing-function: cubic-bezier(0.4, 0, 0.2, 1);
+    }
+  }
+}
+
+/*Portofolio buttons*/
+
+.portofolio__buttons {
+  display: flex;
+  text-align: center;
+  margin-left: 250px;
+  margin-right: 250px;
+  justify-content: center;
+  padding-top: 94px;
+  padding-bottom: 56px;
+  & li {
+    margin: 10px;
+  }
+  &--btn-section {
+    width: 96px;
+    height: 38px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    text-align: center;
+    letter-spacing: 0.03em;
+    border: 0;
+    border-radius: 4px;
+    cursor: pointer;
+    &:hover {
+      color: $text-color;
+      font-family: "Roboto";
+      font-style: normal;
+      font-weight: 500;
+      font-size: 16px;
+      text-align: center;
+      letter-spacing: 0.03em;
+      border: 0;
+      cursor: pointer;
+      background-color: $link-color;
+      box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1),
+        0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+      border-radius: 4px;
+    }
+  }
+}
+
+/*Footer buttons*/

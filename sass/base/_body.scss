@@ -1,0 +1,157 @@
+.hero-section {
+  position: relative;
+  width: 480px;
+  height: 400px;
+  background-color: $alternative-color;
+  font-family: "Roboto";
+  font-style: normal;
+  color: $text-color;
+  margin: 0;
+  background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+    url(/images/header-background-m.jpg) no-repeat;
+  background-image: image-set(
+    url(/images/header-background-m.jpg) x1,
+    url(/images/header-background-m@2x.jpg) x2
+  );
+}
+.hero-section__title {
+  position: absolute;
+  top: 68px;
+  left: 1px;
+  display: flex;
+  justify-content: center;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 900;
+  font-size: 26px;
+  line-height: 42px;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+  text-align: center;
+  display: flex;
+  padding: 0 60px;
+  margin-top: 60px;
+}
+.hero-section__btn {
+  top: 238px;
+  left: 138px;
+  position: absolute;
+  font-family: "Roboto";
+  font-style: normal;
+  font-family: var(--text-font-family);
+  background-color: $link-color;
+  color: $text-color;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+}
+
+@media screen and (min-width: $tablet-breakpoint) {
+  .hero-section {
+    position: relative;
+    width: 769px;
+    height: 400px;
+    background-color: $alternative-color;
+    font-family: "Roboto";
+    font-style: normal;
+    color: $text-color;
+    margin: 0;
+    padding-top: 10px;
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(/images/header-background-t.jpg) no-repeat;
+    background-image: image-set(
+      url(/images/header-background-t.jpg) x1,
+      url(/images/header-background-t@2x.jpg) x2
+    );
+  }
+  .hero-section__title {
+    position: absolute;
+    top: 22px;
+    left: 13px;
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    margin-bottom: 0;
+  }
+  .hero-section__btn {
+    top: 238px;
+    left: 284px;
+    position: absolute;
+    font-family: "Roboto";
+    font-style: normal;
+    font-family: var(--text-font-family);
+    background-color: $link-color;
+    color: $text-color;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+  }
+}
+
+@media screen and (min-width: $desktop-breakpoint) {
+  .hero-section {
+    position: relative;
+    width: 1600px;
+    height: 600px;
+    background-color: $alternative-color;
+    font-family: "Roboto";
+    font-style: normal;
+    color: $text-color;
+    margin: 0;
+    height: 600px;
+    padding-top: 10px;
+    background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
+      url(/images/header-background-d.jpg);
+    background-image: image-set(
+      url(/images/header-background-d.jpg) x1,
+      url(/images/header-background-d@2x.jpg) x2
+    );
+  }
+  .hero-section__title {
+    display: flex;
+    justify-content: center;
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 60px;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    padding-top: 160px;
+    margin-left: 250px;
+    margin-right: 250px;
+    margin-bottom: 0;
+  }
+  .hero-section__btn {
+    top: 374px;
+    left: 708px;
+    position: absolute;
+    font-family: "Roboto";
+    font-style: normal;
+    font-family: var(--text-font-family);
+    background-color: $link-color;
+    color: $text-color;
+    font-size: 16px;
+    font-weight: 700;
+    cursor: pointer;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    width: 200px;
+    height: 50px;
+  }
+}
