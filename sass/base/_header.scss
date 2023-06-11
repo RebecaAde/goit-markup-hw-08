@@ -7,7 +7,7 @@
   display: flex;
   width: 85px;
   height: 22px;
-  margin-top: 292px;
+  margin-top: -40px;
   gap: 10px;
   padding-top: 19px;
   font-family: "Roboto";
@@ -150,6 +150,7 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
+    margin-top: 160px;
   }
   .navigation {
     position: relative;
@@ -167,6 +168,7 @@
     display: flex;
     flex-direction: row;
     margin-left: 175px;
+    margin-top: 160px;
   }
   .navigation__links li {
     margin-left: 10px;
@@ -238,6 +240,7 @@
     font-size: 14px;
     line-height: 16px;
     letter-spacing: 0.02em;
+    margin-top: 160px;
   }
 
   .navigation {
@@ -257,6 +260,7 @@
       font-size: 14px;
       line-height: 16px;
       letter-spacing: 0.02em;
+      margin-top: 160px;
 
       color: #212121;
     }
@@ -295,7 +299,7 @@
   .nav__border {
     border-bottom: 3px solid $link-color;
     border-radius: 2px;
-    padding-bottom: 23px;
+    padding-bottom: 21px;
   }
   .nav__svg {
     display: flex;
@@ -304,24 +308,24 @@
     margin-right: 10px;
     margin-top: 2px;
   }
-  .nav-porto {
-    display: flex;
-    width: 85px;
-    height: 22px;
-    margin-top: 292px;
-    gap: 10px;
-    padding-top: 19px;
-    font-family: "Roboto";
-    font-style: normal;
-    font-weight: 500;
-    font-size: 18px;
-    line-height: 22px;
-    letter-spacing: 0.02em;
-    color: #ffffff;
-  }
-  .nav__porto {
-    border-bottom: 3px solid $link-color;
-    border-radius: 0px;
-    padding-bottom: 14px;
-  }
+}
+.nav-porto {
+  display: flex;
+  width: 85px;
+  height: 22px;
+  margin-top: 292px;
+  gap: 10px;
+  padding-top: 19px;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 18px;
+  line-height: 22px;
+  letter-spacing: 0.02em;
+  color: #ffffff;
+}
+.nav__porto {
+  border-bottom: 3px solid $link-color;
+  border-radius: 0px;
+  padding-bottom: 14px;
 }
