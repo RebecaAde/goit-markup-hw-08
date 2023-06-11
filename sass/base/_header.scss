@@ -329,3 +329,27 @@
   border-radius: 0px;
   padding-bottom: 14px;
 }
+.navig__porto {
+  position: relative;
+  margin-top: 3px;
+  margin-bottom: 5px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 40px;
+}
+.navigation__porto {
+  display: flex;
+  flex-direction: row;
+  display: flex;
+  align-items: center;
+  color: #757575;
+  font-family: "Roboto";
+  font-style: normal;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 16px;
+  letter-spacing: 0.02em;
+  margin-top: 11px;
+  padding-left: 500px;
+}
