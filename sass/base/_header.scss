@@ -1,12 +1,13 @@
 .header {
-  position: relative;
+  display: flex;
+  width: 100vw;
   height: 60px;
 }
 .nav-links {
+  display: flex;
   width: 85px;
   height: 22px;
   margin-top: 292px;
-  display: flex;
   gap: 10px;
   padding-top: 19px;
   font-family: "Roboto";
@@ -18,8 +19,10 @@
   color: #2196f3;
 }
 .logo {
-  position: absolute;
+  left: 20px;
   top: 20px;
+
+  position: absolute;
   font-family: $logo-font-family;
   font-style: normal;
   font-weight: 700;
@@ -28,6 +31,7 @@
 }
 
 .navigation {
+  position: relative;
   display: none;
   &.is-open {
     display: flex;
@@ -67,9 +71,6 @@
   display: none;
 }
 .navigation__links {
-  position: absolute;
-  top: 10px;
-  left: 4px;
   display: flex;
   flex-direction: column;
   font-family: "Roboto";
@@ -82,9 +83,7 @@
   color: #212121;
 }
 .navigation__contact {
-  position: absolute;
-  top: 265px;
-  right: 288px;
+  display: flex;
   flex-direction: column-reverse;
   display: flex;
   align-items: center;
@@ -95,11 +94,13 @@
   font-size: 23px;
   line-height: 16px;
   letter-spacing: 0.02em;
+
+  align-content: flex-start;
+  flex-direction: column;
+  flex-wrap: wrap;
 }
 .navigation__contact--telephone {
-  position: absolute;
-  left: -100px;
-  bottom: 90px;
+  display: flex;
   font-family: "Roboto";
   color: #757575;
   display: flex;
@@ -110,13 +111,9 @@
 }
 
 .navigation__contact--mail {
-  position: absolute;
-  left: -100px;
-  bottom: 58px;
-
+  display: flex;
   font-family: "Roboto";
   color: #757575;
-  display: flex;
   flex-direction: row-reverse;
   margin-right: 40px;
   font-size: 14px;
@@ -124,14 +121,14 @@
 
 @media screen and (min-width: $tablet-breakpoint) {
   .header {
-    position: relative;
+    display: flex;
     height: 70px;
-    height: 60px;
+    width: 100vw;
   }
   .logo {
+    top: 20px;
+    left: 20px;
     position: absolute;
-    top: 15px;
-    left: 10px;
     font-family: $logo-font-family;
     font-style: normal;
     font-weight: 700;
@@ -143,11 +140,8 @@
     display: none;
   }
   .navigation__contact {
-    position: absolute;
-    top: 10px;
-    right: 45px;
-    flex-direction: column;
     display: flex;
+    flex-direction: column;
     align-items: center;
     color: #757575;
     font-family: "Roboto";
@@ -158,18 +152,21 @@
     letter-spacing: 0.02em;
   }
   .navigation {
+    position: relative;
+    margin-top: -130px;
+    margin-bottom: 5px;
     display: flex;
+    justify-content: space-between;
+    align-items: center;
   }
 
   .button--close-menu {
     display: none;
   }
   .navigation__links {
-    position: absolute;
-    top: -17px;
-    left: 143px;
     display: flex;
     flex-direction: row;
+    margin-left: 175px;
   }
   .navigation__links li {
     margin-left: 10px;
@@ -177,7 +174,7 @@
   .nav__border {
     border-bottom: 5px solid $link-color;
     border-radius: 0px;
-    padding-bottom: 17px;
+    padding-bottom: 22px;
   }
   .nav__svg {
     display: flex;
@@ -187,9 +184,6 @@
     margin-top: 2px;
   }
   .navigation__contact--telephone {
-    position: absolute;
-    top: 7px;
-    right: -86px;
     font-family: "Roboto";
     color: #757575;
     display: flex;
@@ -198,9 +192,6 @@
   }
 
   .navigation__contact--mail {
-    position: absolute;
-    top: -12px;
-    right: -86px;
     font-family: "Roboto";
     color: #757575;
     display: flex;
@@ -210,22 +201,19 @@
   .navigation__links li {
     margin-right: 30px;
   }
-  .nav-links {
-    display: none;
-  }
 }
 
 @media screen and (min-width: $desktop-breakpoint) {
   .header {
-    position: relative;
+    width: 100vw;
     height: 70px;
     display: flex;
     border-bottom: 1px solid #ececec;
   }
   .logo {
     position: absolute;
-    left: 60px;
     top: 20px;
+    left: 20px;
     font-family: $logo-font-family;
     font-style: normal;
     font-weight: 700;
@@ -239,9 +227,7 @@
     display: none;
   }
   .navigation__contact {
-    position: absolute;
-    top: 10px;
-    right: 453px;
+    display: flex;
     flex-direction: row;
     display: flex;
     align-items: center;
@@ -253,21 +239,16 @@
     line-height: 16px;
     letter-spacing: 0.02em;
   }
-  .nav-links {
-    display: none;
-  }
 
   .navigation {
-    margin-top: 5px;
+    position: relative;
+    margin-top: -130px;
     margin-bottom: 5px;
     display: flex;
     justify-content: space-between;
     align-items: center;
 
     &__links {
-      position: absolute;
-      top: 10px;
-      left: 261px;
       display: flex;
       align-items: center;
       font-family: "Roboto";
@@ -281,9 +262,6 @@
     }
 
     &__contact--telephone {
-      position: absolute;
-      top: 10px;
-      right: -25px;
       font-family: "Roboto";
       color: #757575;
       display: flex;
@@ -291,9 +269,6 @@
     }
 
     &__contact--mail {
-      position: absolute;
-      top: 10px;
-      right: -178px;
       font-family: "Roboto";
       color: #757575;
       display: flex;
@@ -320,7 +295,7 @@
   .nav__border {
     border-bottom: 3px solid $link-color;
     border-radius: 2px;
-    padding-bottom: 27px;
+    padding-bottom: 23px;
   }
   .nav__svg {
     display: flex;
@@ -328,5 +303,25 @@
     height: 12px;
     margin-right: 10px;
     margin-top: 2px;
+  }
+  .nav-porto {
+    display: flex;
+    width: 85px;
+    height: 22px;
+    margin-top: 292px;
+    gap: 10px;
+    padding-top: 19px;
+    font-family: "Roboto";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 22px;
+    letter-spacing: 0.02em;
+    color: #ffffff;
+  }
+  .nav__porto {
+    border-bottom: 3px solid $link-color;
+    border-radius: 0px;
+    padding-bottom: 14px;
   }
 }

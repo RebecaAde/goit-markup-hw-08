@@ -1,6 +1,6 @@
 .hero-section {
   position: relative;
-  width: 480px;
+  width: 100vw;
   height: 400px;
   background-color: $alternative-color;
   font-family: "Roboto";
@@ -8,10 +8,10 @@
   color: $text-color;
   margin: 0;
   background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-    url(../images/header-background-m.jpg) no-repeat;
+    url(/images/header-background-m.jpg) no-repeat;
   background-image: image-set(
-    url(../images/header-background-m.jpg) x1,
-    url(../images/header-background-m@2x.jpg) x2
+    url(/images/header-background-m.jpg) x1,
+    url(/images/header-background-m@2x.jpg) x2
   );
 }
 .hero-section__title {
@@ -55,7 +55,7 @@
 @media screen and (min-width: $tablet-breakpoint) {
   .hero-section {
     position: relative;
-    width: 769px;
+    width: 100vw;
     height: 400px;
     background-color: $alternative-color;
     font-family: "Roboto";
@@ -64,10 +64,10 @@
     margin: 0;
     padding-top: 10px;
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/header-background-t.jpg) no-repeat;
+      url(/images/header-background-t.jpg) no-repeat;
     background-image: image-set(
-      url(../images/header-background-t.jpg) x1,
-      url(../images/header-background-t@2x.jpg) x2
+      url(/images/header-background-t.jpg) x1,
+      url(/images/header-background-t@2x.jpg) x2
     );
   }
   .hero-section__title {
@@ -107,7 +107,7 @@
 @media screen and (min-width: $desktop-breakpoint) {
   .hero-section {
     position: relative;
-    width: 1600px;
+    width: 100vw;
     height: 600px;
     background-color: $alternative-color;
     font-family: "Roboto";
@@ -117,10 +117,10 @@
     height: 600px;
     padding-top: 10px;
     background: linear-gradient(rgba(47, 48, 58, 0.4), rgba(47, 48, 58, 0.4)),
-      url(../images/header-background-d.jpg);
+      url(/images/header-background-d.jpg);
     background-image: image-set(
-      url(../images/header-background-d.jpg) x1,
-      url(../images/header-background-d@2x.jpg) x2
+      url(/images/header-background-d.jpg) x1,
+      url(/images/header-background-d@2x.jpg) x2
     );
   }
   .hero-section__title {

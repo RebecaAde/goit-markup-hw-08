@@ -1,7 +1,6 @@
 .advantages {
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
 }
 
 .work__section {
@@ -65,7 +64,8 @@ h2 {
   color: #212121;
 }
 .cards__pictures {
-  width: 405px;
+  margin-right: 30px;
+  width: 410px;
   height: 350px;
 }
 .footer__divide--footer-section {
@@ -75,6 +75,8 @@ h2 {
 @media screen and (min-width: $tablet-breakpoint) {
   .advantages {
     display: flex;
+    width: 100vw;
+    flex-direction: column;
   }
 
   .cards__card {
@@ -164,13 +166,19 @@ h2 {
   .footer__divide--footer-section {
     color: #f5f4fa;
   }
+  .nav-links {
+    display: none;
+  }
 }
 
 @media screen and (min-width: $desktop-breakpoint) {
   .advantages {
     display: flex;
     flex-direction: row;
-    justify-content: center;
+    width: 100vw;
+  }
+  .nav-links {
+    display: none;
   }
 
   .cards__card {
